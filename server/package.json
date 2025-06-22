@@ -3,20 +3,19 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-"scripts": {
-  "dev": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --trace-warnings\" node src/server.ts",
-  "dev:socket": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --trace-warnings\" node server.mts",
-  "build:socket": "tsc --project tsconfig.server.json",
-  "start:socket": "cross-env NODE_ENV=production node dist/server.mjs"
-},
-"dependencies": {
-  "dotenv": "^16.3.1",
-  "socket.io": "^4.8.1",
-  "ts-node": "^10.9.2",
-  "cross-env": "^7.0.3"
-},
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --trace-warnings\" node src/server.ts",
+    "dev:socket": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --trace-warnings\" node server.mts",
+    "build:socket": "tsc --project tsconfig.server.json",
+    "start:socket": "cross-env NODE_ENV=production node dist/server.mjs"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "socket.io": "^4.8.1"
+  },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.19.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
