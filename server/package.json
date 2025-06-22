@@ -3,15 +3,15 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-"scripts": {
-  "dev": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --trace-warnings\" node src/server.ts",
-  "dev:socket": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --trace-warnings\" node server.mts",
-  "build": "tsc --project tsconfig.server.json",
-  "build:socket": "tsc --project tsconfig.server.json",
-  "start": "node dist/server.mjs",
-  "start:socket": "cross-env NODE_ENV=production node dist/server.mjs",
-  "lint": "echo \"no lint script configured\""
-},
+  "scripts": {
+    "dev": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --trace-warnings\" node src/server.ts",
+    "dev:socket": "cross-env NODE_OPTIONS=\"--loader ts-node/esm --trace-warnings\" node server.mts",
+    "build": "tsc --project tsconfig.server.json",
+    "build:socket": "tsc --project tsconfig.server.json",
+    "start": "node dist/server.mjs",
+    "start:socket": "cross-env NODE_ENV=production node dist/server.mjs",
+    "lint": "echo \"no lint script configured\""
+  },
   "dependencies": {
     "dotenv": "^16.3.1",
     "socket.io": "^4.8.1"
