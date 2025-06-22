@@ -33,6 +33,6 @@ io.on("connection", (socket) => {
   });
 });
 
-httpServer.listen(port, () => {
-  console.log(`🚀 Socket.IO server running on http://localhost:${port}`);
+httpServer.listen(port, "0.0.0.0", () => {
+  console.log(`🚀 Socket.IO server running on port ${port}`);
 });
