@@ -13,12 +13,12 @@
     "lint": "echo \"no lint script configured\""
   },
   "dependencies": {
+    "cross-env": "^7.0.3",
     "dotenv": "^16.3.1",
     "socket.io": "^4.8.1"
   },
   "devDependencies": {
     "@types/node": "^20",
-    "cross-env": "^7.0.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.8.3"
   }
