@@ -1,15 +1,18 @@
 {
-    "extends": "./tsconfig.json",
-    "compilerOptions": {
-        "module": "ESNext",
-        "target": "ES2020",
-        "outDir": "./dist",
-        "moduleResolution": "Node",
-        "esModuleInterop": true,
-        "allowJs": true,
-        "strict": true,
-        "noEmit": false,
-        "isolatedModules": false
-    },
-    "include": ["server.mts"]
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "ESNext",                         // ✔️ suitable for native ESM
+    "target": "ES2020",                         // ✔️ modern target
+    "outDir": "./dist",                         // ✔️ compiled files will go here
+    "rootDir": ".",                             // 👈 add this for consistent file paths
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "allowJs": true,
+    "strict": true,
+    "noEmit": false,
+    "isolatedModules": false,
+    "types": ["node"]                           // 👈 ensure Node.js types
+  },
+  "include": ["server.mts"],
+  "exclude": ["node_modules", "dist"]
 }

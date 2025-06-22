@@ -25,6 +25,6 @@ io.on("connection", (socket) => {
         console.log(`User Disconnected: ${socket.id}`);
     });
 });
-httpServer.listen(port, () => {
-    console.log(`🚀 Socket.IO server running on http://localhost:${port}`);
+httpServer.listen(port, "0.0.0.0", () => {
+    console.log(`🚀 Socket.IO server running on port ${port}`);
 });
