@@ -39,7 +39,11 @@ export default function Home() {
     socket.emit("message", data);
   }
   return (
-   <div className="flex mt-24 justify-center w-full">
+    <div className="">
+      <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-blue-600 tracking-wide mt-5">
+         My<span className="text-black">Chat</span>
+    </div>
+<div className="flex mt-24 justify-center w-full">
     {!joined ? (
       <div className="flex w-full max-w-3xl mx-auto flex-col items-center">
         <h1 className='mb-4 text-2xl font-bold'>Joine a Room</h1>
@@ -79,5 +83,8 @@ export default function Home() {
     )}
     
    </div>
+
+    </div>
+   
   );
 }
